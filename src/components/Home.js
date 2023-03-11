@@ -10,6 +10,10 @@ function Home() {
             <Link to="/upload" >Upload</Link>
             <br />
             <Link to="/allkhutbah" >All Khutbah</Link>
+            <br />
+            <Link to="/login" >Login</Link>
+            <br />
+            <Link to="/register" >Sign-up</Link>
         </div>
     );
 }

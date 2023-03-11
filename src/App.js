@@ -17,7 +17,7 @@ function App() {
           <Route path="/allkhutbah" element={<AllKhutbah />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/registration" element={<Registration />} />
+          <Route path="/register" element={<Registration />} />
         </Routes>
       </Router>
 
