@@ -11,7 +11,7 @@ function Login(){
                 <form >
                     <div className="txt_field">
                         <input type="email" required/>
-                        <label>Email</label>
+                        <label >Email</label>
                     </div>
                     <div className="txt_field">
                         <input type="password" required/>

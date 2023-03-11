@@ -5,30 +5,32 @@ import "../CSS/Registration.css";
 
 function Registration() {
     return (
-        <div>
-            <h1>Sign-up</h1>
-            <form action="submit">
-                <div>
-                    <input type="text" name="fullname" />
-                    <label >Full Name</label>
-                </div>
-                <div>
-                    <input type="email" name="email" />
-                    <label >Email</label>
-                </div>
-                <div>
-                    <input type="tel" name="tel" />
-                    <label >Phone Number</label>
-                </div>
-                <div>
-                    <input type="password" name="password" />
-                    <label >Password</label>
-                </div>
-                <button type="submit">Create Account</button>
-                <div className="have">
-                    Already have Account? <Link to="/login">Login</Link>
-                </div>
-            </form>
+        <div className="signup_body">
+            <div className="container">
+                <h1 className="signup_header">Sign-up</h1>
+                <form action="submit">
+                    <div className="form-field">
+                        <input type="text" name="fullname" required/>
+                        <label >Full Name</label>
+                    </div>
+                    <div className="form-field">
+                        <input type="text" name="email" required/>
+                        <label >Email</label>
+                    </div>
+                    <div className="form-field">
+                        <input type="tel" name="tel" required/>
+                        <label >Phone Number</label>
+                    </div>
+                    <div className="form-field">
+                        <input type="password" name="password" required/>
+                        <label >Password</label>
+                    </div>
+                    <button className="signup_btn" type="submit">Create Account</button>
+                    <div className="login_link">
+                        Already have Account? <Link className="signup_l" to="/login">Login</Link>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }
