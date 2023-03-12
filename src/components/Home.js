@@ -1,19 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import '../CSS/Home.css'
 
 
 function Home() {
     return(
-        <div>
-            <h1>Homepage</h1>
-            <p>This is the homepage</p>
-            <Link to="/upload" >Upload</Link>
-            <br />
-            <Link to="/allkhutbah" >All Khutbah</Link>
-            <br />
-            <Link to="/login" >Login</Link>
-            <br />
-            <Link to="/register" >Sign-up</Link>
+        <div className="main_page">
+            <section className="hero">
+            <h1>Welcome to Khutbah</h1>
+            <p>The place where your opinoins matter</p>
+            <button>Get Started</button>
+            </section>
+
+            <section className="upload">
+                <Link to="/upload" >Upload</Link>
+            </section>
+
+            <section className="allkhutbah">
+                <Link to="/allkhutbah" >All Khutbah</Link>
+            </section>
         </div>
     );
 }

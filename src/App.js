@@ -6,12 +6,14 @@ import Login from './components/Login';
 import Registration from './components/Registration';
 import Home from './components/Home';
 import AllKhutbah from './components/AllKhutbah';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allkhutbah" element={<AllKhutbah />} />
