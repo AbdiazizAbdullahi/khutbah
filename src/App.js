@@ -1,29 +1,29 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Upload from './components/Upload';
+import Submit from './components/Submit';
 import Login from './components/Login';
 import Registration from './components/Registration';
 import Home from './components/Home';
-import AllKhutbah from './components/AllKhutbah';
-import Navbar from './components/Navbar';
-
+import Sample from './components/Sample';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
+    
     <div className="App">
       <Router>
-        <Navbar/>
+        <Sidebar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/allkhutbah" element={<AllKhutbah />} />
-          <Route path="/upload" element={<Upload />} />
+          <Route path="/sample" element={<Sample />} />
+          <Route path="/submit" element={<Submit />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registration />} />
         </Routes>
       </Router>
-
     </div>
+    
   );
 }
 
