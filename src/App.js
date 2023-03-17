@@ -7,6 +7,9 @@ import Registration from './components/Registration';
 import Home from './components/Home';
 import Sample from './components/Sample';
 import Sidebar from './components/Sidebar';
+import MySubs from './components/MySubs';
+import Status from './components/Status';
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <Sidebar/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/status" element={<Status />} />
+          <Route path="/mysubs" element={<MySubs />} />
           <Route path="/sample" element={<Sample />} />
           <Route path="/submit" element={<Submit />} />
           <Route path="/login" element={<Login />} />

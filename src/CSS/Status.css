@@ -1,0 +1,31 @@
+.status-child {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 150px 100px 50px 180px;
+  }
+  
+  .status-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .status-child div {
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .status-child div small {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: 10px;
+  }
+  
+  .status-child div:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+  
